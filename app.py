@@ -1,8 +1,8 @@
 import sys
-import numpy
+from numpy import polyfit
 from scipy.stats import pearsonr
 
-# Read file and parse the data into a list of integers
+# Read file and parse data into list of integers
 def read_data(file):
     with open(file, 'r') as f:
         data = [int(line.strip()) for line in f.readlines()]
@@ -10,10 +10,10 @@ def read_data(file):
 
 def main(file):
     y = read_data(file)
-    x = list(range(len(y)))  # x values are line numbers 0, 1, 2, ...
-
+    x = list(range(len(y)))
+    
     # Linear regression
-    a, b = numpy.polyfit(x, y, 1)
+    a, b = polyfit(x, y, 1)
 
     # Pearson Correlation
     r, _ = pearsonr(x, y)

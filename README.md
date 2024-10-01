@@ -35,7 +35,7 @@ python3 app.py data.txt
 
 ## Testing
 
-To test the program, [download this file](https://assets.01-edu.org/stats-projects/stat-bin-dockerized.zip), extract it, and copy the **bin** folder to the root of this project. Then, run `./bin/linear-stats` followed by `python3 app.py data.txt`, and compare the results of the tester with my program. The downloaded program modifies `data.txt` each time it runs, so feel free to test multiple times. Happy testing!
+To test the program, run `./bin/linear-stats` followed by `python3 app.py data.txt`, and compare the results of the tester with my program. The **bin** program modifies `data.txt` each time it runs, so feel free to test multiple times. Happy testing!
 
 ## Concepts
 
